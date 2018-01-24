@@ -15,7 +15,7 @@ set(Boost_USE_STATIC_RUNTIME    OFF)
 
 set (CMAKE_CXX_STANDARD 14)
 
-find_package(Boost 1.65  REQUIRED COMPONENTS
+find_package(Boost 1.58  REQUIRED COMPONENTS
     system
     coroutine
     thread
