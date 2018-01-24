@@ -1,0 +1,25 @@
+A project prepared for GlobalLogic C++ ProCamp traingings
+SIMPLE CHESS
+
+A basic Chess AI using min-max search with alpha-beta pruning and a simplistic
+approach to quiescent search.
+
+
+
+install prerequisites:
+    cd ~/    
+    mkdir boost 
+    cd boost
+    wget https://dl.bintray.com/boostorg/release/1.65.1/source/boost_1_65_1.tar.gz
+    tar -xvf boost_1_65_1.tar.gz
+    cd boost_1_65_1
+    ./bootstrap.sh --prefix=~/boost/
+    ./b2 cxxflags='-std=c++14'
+    ./b2 install
+
+COMPILE
+    mkdir build
+    cd build
+    cmake -DBOOST_ROOT=~/boost/boost_1_65_1/ ..
+    make
+
