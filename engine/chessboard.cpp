@@ -1791,7 +1791,7 @@ void ChessBoard::undoMove(const Move & move)
         toogleColor();
     }
 
-    if (move.passant_pos_opponent) {
+    if (move.passant_pos_opponent != -1) {
         square[move.passant_pos_opponent] = SET_PASSANT(square[move.passant_pos_opponent]);
     }
     this->passant_pos = move.passant_pos_opponent;
